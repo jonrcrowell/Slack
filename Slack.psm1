@@ -55,3 +55,12 @@ function Send-SlackMessage {
     $response
   }
 }
+
+function Get-SlackApiToken {
+  $script:SlackApiToken
+}
+
+function Set-SlackApiToken {
+  param ($token)
+  $script:SlackApiToken = $token
+}
